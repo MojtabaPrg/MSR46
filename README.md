@@ -12,7 +12,7 @@
 - **اخبار فناوری**: اطلاع از تازه‌ترین اتفاقات دنیای تکنولوژی.
 
 ## تصاویر
-![Screenshot 2024-12-13 232743](https://github.com/user-attachments/assets/2f0e8f98-85d8-47d3-b608-31e26a0c37e6)
+![Screenshot 2024-12-13 232743]([https://github.com/user-attachments/assets/2f0e8f98-85d8-47d3-b608-31e26a0c37e6](https://github.com/mojtaba86sh/MSR46/issues/2#issue-2753738151))
 
 ## مشارکت
 اگر ایده، نظر یا پیشنهادی دارید، خوشحال می‌شویم آن را با ما به اشتراک بگذارید یا مشکلات را گزارش دهید.
