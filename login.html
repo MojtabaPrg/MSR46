@@ -55,14 +55,14 @@
             <h4>ورود</h4>
           </div>
           <div class="card-body shadow-lg">
-            <form>
+            <form action="log.php" method="post">
               <div class="mb-3">
                 <label for="email" class="form-label">ایمیل</label>
-                <input type="email" class="form-control text-start" id="email" placeholder="ایمیل خود را وارد کنید">
+                <input type="email" class="form-control text-start" name="Email" id="email" placeholder="ایمیل خود را وارد کنید">
               </div>
               <div class="mb-3">
                 <label for="password" class="form-label">رمز عبور</label>
-                <input type="password" class="form-control" id="password" placeholder="رمز عبور خود را وارد کنید">
+                <input type="password" class="form-control" name="pass" id="password" placeholder="رمز عبور خود را وارد کنید">
               </div>
               <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="remember">
@@ -88,8 +88,6 @@
 
       if(a == "" || b == ""){
         alert("لطفاً تمام فیلدها را پر کنید");
-      }else{
-        alert("شما با موفقیت وارد حساب کاربری خود شدید");
       }
 }
 </script>

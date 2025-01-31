@@ -59,18 +59,18 @@
             <h4>ثبت نام</h4>
           </div>
           <div class="card-body shadow-lg">
-            <form>
+            <form method="post" action="sing.php">
               <div class="mb-3">
                 <label for="username" class="form-label">نام کاربری</label>
-                <input type="text" class="form-control" id="username" placeholder="وارد کنید نام کاربری خود را">
+                <input type="text" class="form-control" name="user" id="username" placeholder="وارد کنید نام کاربری خود را">
               </div>
               <div class="mb-3">
                 <label for="email" class="form-label">آدرس ایمیل</label>
-                <input type="email" class="form-control text-start" id="email" placeholder="وارد کنید ایمیل خود را">
+                <input type="email" class="form-control text-start" name="Email" id="email" placeholder="وارد کنید ایمیل خود را">
               </div>
               <div class="mb-3">
                 <label for="password" class="form-label">رمز عبور</label>
-                <input type="password" class="form-control" id="password" placeholder="وارد کنید پسوردتان را">
+                <input type="password" class="form-control" name="pass" id="password" placeholder="وارد کنید پسوردتان را">
               </div>
               <div class="mb-3">
                 <label for="confirmPassword" class="form-label">تکرار رمز عبور</label>
