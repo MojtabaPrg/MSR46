@@ -104,7 +104,7 @@
                 <label class="form-check-label" for="terms">من با <a href="" data-bs-toggle="modal"
                     data-bs-target="#termsModal" class="text-primary">شرایط و ضوابط</a> موافقم</a></label>
               </div>
-              <button onclick="sing()" type="submit" class="btn btn-success w-100">ثبت نام</button>
+              <button onclick="sign()" type="submit" class="btn btn-success w-100">ثبت نام</button>
             </form>
           </div>
         </div>
@@ -165,7 +165,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
   </script>
   <script>
-        function sing(){
+        function sign(){
           a=document.getElementById("username").value;
           b=document.getElementById("email").value;
           c=document.getElementById("password").value;
