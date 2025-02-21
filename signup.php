@@ -13,43 +13,9 @@
 
 <body>
 
-       <header class="shadow custom-shadow mb-5">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-          <div class="container">
-            <a class="navbar-brand text-success" href="index.html">MSR46</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <!-- <li class="nav-item ms-2">
-                        <a class="nav-link active" aria-current="page" href="#">صفحه اصلی</a>
-                      </li> -->
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html#mapp">مطالب نرم افزار</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html#mnews">اخبار تکنولوژی</a>
-                </li>
-    
-                <li class="nav-item">
-                  <a class="nav-link" href="./index.html#foot">درباره ما</a>
-                </li>
-    
-                <li class="nav-item">
-                  <a class="nav-link" href="login.html">ورود</a>
-                </li>
-    
-              </ul>
-              <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="جستجو..." aria-label="جستجو">
-                <button class="btn btn-outline-success p-auto" type="submit">جستجو</button>
-              </form>
-            </div>
-          </div>
-        </nav>
-      </header>
+<?php
+include("header-sl.php")
+?>
 
   <div class="container mt-5">
     <div class="row justify-content-center">
@@ -95,10 +61,6 @@
                 <label for="password" class="form-label">رمز عبور</label>
                 <input type="password" class="form-control" name="pass" id="password" placeholder="وارد کنید پسوردتان را">
               </div>
-              <div class="mb-3">
-                <label for="confirmPassword" class="form-label">تکرار رمز عبور</label>
-                <input type="password" class="form-control" id="confirmPassword" placeholder="تایید کنید پسوردتان را">
-              </div>
               <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="terms">
                 <label class="form-check-label" for="terms">من با <a href="" data-bs-toggle="modal"
@@ -109,7 +71,7 @@
           </div>
         </div>
         <div class="text-center mt-3">
-          <p>از قبل حساب کاربری دارید؟ <a href="login.html">وارد شوید</a></p>
+          <p>از قبل حساب کاربری دارید؟ <a href="login.php">وارد شوید</a></p>
         </div>
       </div>
     </div>
@@ -163,19 +125,6 @@
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
-  </script>
-  <script>
-        function sign(){
-          a=document.getElementById("username").value;
-          b=document.getElementById("email").value;
-          c=document.getElementById("password").value;
-          d=document.getElementById("confirmPassword").value;
-
-          if(a == "" || b == "" || c == "" || d == ""){
-            alert("لطفاً تمام فیلدها را پر کنید");
-          }else
-          alert("ثبت نام موفقیت آمیز");
-    }
   </script>
 </body>
 

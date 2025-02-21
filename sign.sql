@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 07, 2025 at 10:38 AM
+-- Generation Time: Feb 21, 2025 at 06:30 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -50,6 +50,26 @@ INSERT INTO `city` (`nacity`, `IDcity`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `news`
+--
+
+CREATE TABLE `news` (
+  `imageurl` varchar(100) NOT NULL,
+  `title` varchar(50) NOT NULL,
+  `text` text NOT NULL,
+  `id` int(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `news`
+--
+
+INSERT INTO `news` (`imageurl`, `title`, `text`, `id`) VALUES
+('images/grok_image_x5j2064.jpg', 'Icon EL', 'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.', 1);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `signup`
 --
 
@@ -68,7 +88,8 @@ INSERT INTO `signup` (`ID`, `User Name`, `Email`, `Password`) VALUES
 (1, 'Mojtaba', 'pcmojtaba19@gmail.com', '1234'),
 (2, 'Ahmad', 'pcmojtaba19@gmail.com', '12345678'),
 (3, 'بهروز', 'pcmojtaba19@gmail.com', '123'),
-(4, 'ali', 'pcmojtaba19@gmail.com', '12');
+(4, 'ali', 'pcmojtaba19@gmail.com', '12'),
+(5, 'sadra', 'pcmojtaba19@gmail.com', 'sad');
 
 --
 -- Indexes for dumped tables
@@ -79,6 +100,12 @@ INSERT INTO `signup` (`ID`, `User Name`, `Email`, `Password`) VALUES
 --
 ALTER TABLE `city`
   ADD PRIMARY KEY (`IDcity`);
+
+--
+-- Indexes for table `news`
+--
+ALTER TABLE `news`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `signup`
@@ -97,10 +124,16 @@ ALTER TABLE `city`
   MODIFY `IDcity` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
+-- AUTO_INCREMENT for table `news`
+--
+ALTER TABLE `news`
+  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT for table `signup`
 --
 ALTER TABLE `signup`
-  MODIFY `ID` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `ID` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

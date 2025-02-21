@@ -1,6 +1,5 @@
-
 <?php
-include("header.html");
+include("header-sl.php");
 $id=$_POST["id"];
 $name=$_POST["name"];
 $a=mysqli_connect("localhost","root","","sign");
