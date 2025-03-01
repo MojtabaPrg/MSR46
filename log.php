@@ -8,6 +8,7 @@ $row=mysqli_fetch_array($result);
 if($row){
 
     $_SESSION["login"]=true;
+    $_SESSION["admin"]=$row["admin"];
     ?>
     <script>
         alert("ورود موفقیت آمیز");

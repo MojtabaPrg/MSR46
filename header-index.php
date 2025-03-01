@@ -20,10 +20,11 @@ session_start();
             <li class="nav-item">
               <a class="nav-link" href="#mnews">اخبار تکنولوژی</a>
             </li>
-
-            <li class="nav-item">
+            <?php if(isset($_SESSION["admin"]) && $_SESSION["admin"]==true){ ?>
+              <li class="nav-item">
               <a class="nav-link" href="news.php">مدیریت</a>
             </li>
+            <?php }else{ }?>
 
             <li class="nav-item">
               <a class="nav-link" href="./index.php#foot">درباره ما</a>

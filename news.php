@@ -35,7 +35,7 @@ while($row){
 ?>
 <div class="row card m-1">
     <img class="imgg" src="<?php echo($row["imageurl"]); ?>" alt="">
-    <span class="col-12 m-2 h5"><?php echo($row["title"]); ?></span>
+    <span class="col-12 m-2 h5"><?php echo($row["title"]);?></span>
     <span class="col-12 m-2"><?php echo($row["text"]); ?></span>
     <div class="col">
         <a class="btn btn-success" href="news_edit.php?id=<?php echo($row["id"]); ?>">*</a>

@@ -6,24 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css"
     integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb" crossorigin="anonymous">
-    <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
   <style>
-        .footer .icon {
-            font-size: 1.5rem;
-            margin-right: 10px;
-        }
-
-</style>
+    .footer .icon {
+      font-size: 1.5rem;
+      margin-right: 10px;
+    }
+  </style>
 
 </head>
 
 <body>
 
-<?php
-include("header-index.php")
-?>
+  <?php
+  include("header-index.php")
+    ?>
 
   <!-- مطالب نرم افزار -->
   <section>
@@ -92,7 +91,6 @@ include("header-index.php")
       <div class="row mt-5">
 
         <div class="col col-md-6">
-
           <div class="card shadow">
             <a href="News/elonmuskAi.php"><img src="./img/elonmusk.webp" class="card-img-top"></a>
             <div class="card-body">
@@ -104,11 +102,12 @@ include("header-index.php")
           </div>
         </div>
 
-        <div class="col col-md-6">
 
+        <div class="col col-md-6">
           <div class="card shadow">
-            <a href="News/Xiaomiwatch.php"><img src="https://api2.zoomit.ir/media/xiaomi-sports-walkie-talkie-677922f5375e3c8956470d4b?w=1080&q=80"
-              class="card-img-top"></a>
+            <a href="News/Xiaomiwatch.php"><img
+                src="https://api2.zoomit.ir/media/xiaomi-sports-walkie-talkie-677922f5375e3c8956470d4b?w=1080&q=80"
+                class="card-img-top"></a>
             <div class="card-body">
               <h5 class="card-title">واکی‌تاکی ۵۰ دلاری شیائومی</h5>
               <p class="card-text">شیائومی واکی‌تاکی جدید خود را با قابلیت‌های جذاب ازجمله بُرد ۵۰۰۰ کیلومتری، باتری
@@ -132,7 +131,7 @@ include("header-index.php")
           <p class="card-text"><small class="text-body-secondary">آخرین آپدیت ۳ دقیقه پیش</small></p>
         </div>
       </div> -->
-    
+
     </div>
 
     <!-- اخبار بخش دوم -->
@@ -164,12 +163,13 @@ include("header-index.php")
                 </div>
               </div>
             </div>
-  
+
             <div class="col">
               <div class="card mb-3 shadow" style="max-width: 540px;">
                 <div class="row g-0">
                   <div class="col-xxl-4">
-                    <a href="News/waste.php"><img src="https://api2.zoomit.ir/media/nuclear-waste-facts-sign-scaled-677684f5e264bbf694ff5dbf?w=1080&q=80"
+                    <a href="News/waste.php"><img
+                        src="https://api2.zoomit.ir/media/nuclear-waste-facts-sign-scaled-677684f5e264bbf694ff5dbf?w=1080&q=80"
                         class="img-fluid rounded-start w-100 h-100"></a>
                   </div>
                   <div class="col-md-8">
@@ -183,12 +183,13 @@ include("header-index.php")
                 </div>
               </div>
             </div>
-  
+
             <div class="col">
               <div class="card mb-3 shadow" style="max-width: 540px;">
                 <div class="row g-0">
                   <div class="col-xxl-4">
-                    <a href="News/Thunderbolt.php"><img src="https://api2.zoomit.ir/media/pic2pce101932f-6c4a-4460-81de-f3e4e7e2b206webp-67802b986e3d4b6793536844?w=1080&q=80"
+                    <a href="News/Thunderbolt.php"><img
+                        src="https://api2.zoomit.ir/media/pic2pce101932f-6c4a-4460-81de-f3e4e7e2b206webp-67802b986e3d4b6793536844?w=1080&q=80"
                         class="img-fluid rounded-start w-100 h-100"></a>
                   </div>
                   <div class="col-md-8">
@@ -205,7 +206,7 @@ include("header-index.php")
           </div>
 
           <div class="col-12 col-lg-6">
-  
+
             <div class="col">
               <div class="card mb-3 shadow" style="max-width: 540px;">
                 <div class="row g-0">
@@ -226,12 +227,13 @@ include("header-index.php")
                 </div>
               </div>
             </div>
-  
+
             <div class="col">
               <div class="card mb-3 shadow" style="max-width: 540px;">
                 <div class="row g-0">
                   <div class="col-xxl-4">
-                    <a href="News/whatsApp.php"><img src="https://api2.zoomit.ir/media/whatsapp-logo-673b1c61b42bf336168d25b8?w=1080&q=80"
+                    <a href="News/whatsApp.php"><img
+                        src="https://api2.zoomit.ir/media/whatsapp-logo-673b1c61b42bf336168d25b8?w=1080&q=80"
                         class="img-fluid rounded-start w-100 h-100"></a>
                   </div>
                   <div class="col-md-8">
@@ -245,18 +247,19 @@ include("header-index.php")
                 </div>
               </div>
             </div>
-  
+
             <div class="col">
               <div class="card mb-3 shadow" style="max-width: 540px;">
                 <div class="row g-0">
                   <div class="col-xxl-4">
-                    <a href="News/LGandQualcomm.php"><img src="https://api2.zoomit.ir/media/bmw-vision-neue-klasse-659edec8db28d1d08cc7d389?w=1080&q=80"
+                    <a href="News/LGandQualcomm.php"><img
+                        src="https://api2.zoomit.ir/media/bmw-vision-neue-klasse-659edec8db28d1d08cc7d389?w=1080&q=80"
                         class="img-fluid rounded-start w-100 h-100"></a>
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
                       <h5 class="card-title">همکاری ال‌جی و کوالکام</h5>
-                      <p class="card-text">ال‌جی و کوالکام با همکاری یکدیگر خودروها را هوشمندتر می‌کنند 
+                      <p class="card-text">ال‌جی و کوالکام با همکاری یکدیگر خودروها را هوشمندتر می‌کنند
                       </p>
                       <p class="card-text"><small class="text-body-secondary">آخرین آپدیت ۱۹ دقیقه پیش</small></p>
                     </div>
@@ -283,7 +286,8 @@ include("header-index.php")
               </div>
 
               <div class="col-6 col-md-12 col-xxl-6">
-                <a href="https://daric.gold/?utm_source=zoomit_blog&utm_medium=banner&utm_campaign=zoomit10_11_12" target="_blank">
+                <a href="https://daric.gold/?utm_source=zoomit_blog&utm_medium=banner&utm_campaign=zoomit10_11_12"
+                  target="_blank">
                   <img class="img-fluid mt-md-2" src="./tab/g3.gif" alt="">
                 </a>
               </div>
@@ -295,8 +299,8 @@ include("header-index.php")
             <div class="row">
 
               <div class="col-6 col-md-12 col-xxl-6">
-                <a
-                href="https://nipoto.com/bitcoin?utm_source=website&utm_medium=npstatic12&utm_campaign=target2&utm_term=banner052&utm_content=first" target="_blank">
+                <a href="https://nipoto.com/bitcoin?utm_source=website&utm_medium=npstatic12&utm_campaign=target2&utm_term=banner052&utm_content=first"
+                  target="_blank">
                   <img class="img-fluid mt-md-2" src="./tab/g2.gif" alt="">
                 </a>
               </div>
@@ -320,7 +324,8 @@ include("header-index.php")
               </div>
 
               <div class="col-6 col-md-12 col-xxl-6">
-                <a href="https://www.shatel.ir/internet-services/towers-special-services/?utm_source=zoomit&utm_medium=display&utm_campaign=towers-special-services" target="_blank">
+                <a href="https://www.shatel.ir/internet-services/towers-special-services/?utm_source=zoomit&utm_medium=display&utm_campaign=towers-special-services"
+                  target="_blank">
                   <img class="img-fluid mt-md-2" src="./tab/g7.gif" alt="">
                 </a>
               </div>
@@ -337,30 +342,30 @@ include("header-index.php")
 
   <footer id="foot" class="footer bg-success p-3 mt-4">
     <div class="container">
-        <div class="row">
-            <div class="col-md-4 text-center">
-                <i class="icon bi bi-geo-alt-fill"></i>
-                <p class="text-white">آدرس: اصفهان، خیابان آزادی، پلاک 444</p>
-            </div>
-            <div class="col-md-4 text-center">
-                <i class="icon bi bi-envelope-fill"></i>
-                <p class="text-white">ایمیل: pcmojtaba19@gmail.com</p>
-            </div>
-            <div class="col-md-4 text-center">
-                <i class="icon bi bi-telephone-fill"></i>
-                <p class="text-white">تلفن:‌ +98 992 358 1432</p>
-            </div>
+      <div class="row">
+        <div class="col-md-4 text-center">
+          <i class="icon bi bi-geo-alt-fill"></i>
+          <p class="text-white">آدرس: اصفهان، خیابان آزادی، پلاک 444</p>
         </div>
-        <div>
-          <p class="text-center text-white pt-3">© سال ۱۴۰۳ کپی بخش یا کل هر کدام از مطالب MSR46 تنها با کسب مجوز مکتوب امکان پذیر است</p>
+        <div class="col-md-4 text-center">
+          <i class="icon bi bi-envelope-fill"></i>
+          <p class="text-white">ایمیل: pcmojtaba19@gmail.com</p>
         </div>
+        <div class="col-md-4 text-center">
+          <i class="icon bi bi-telephone-fill"></i>
+          <p class="text-white">تلفن:‌ +98 992 358 1432</p>
+        </div>
+      </div>
+      <div>
+        <p class="text-center text-white pt-3">© سال ۱۴۰۳ کپی بخش یا کل هر کدام از مطالب MSR46 تنها با کسب مجوز مکتوب
+          امکان پذیر است</p>
+      </div>
     </div>
-</footer>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous">
-  </script>
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

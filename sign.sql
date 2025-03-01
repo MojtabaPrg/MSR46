@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 21, 2025 at 06:30 PM
+-- Generation Time: Mar 01, 2025 at 03:36 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -77,19 +77,20 @@ CREATE TABLE `signup` (
   `ID` int(50) NOT NULL,
   `User Name` varchar(50) NOT NULL,
   `Email` varchar(50) NOT NULL,
-  `Password` varchar(50) NOT NULL
+  `Password` varchar(50) NOT NULL,
+  `admin` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `signup`
 --
 
-INSERT INTO `signup` (`ID`, `User Name`, `Email`, `Password`) VALUES
-(1, 'Mojtaba', 'pcmojtaba19@gmail.com', '1234'),
-(2, 'Ahmad', 'pcmojtaba19@gmail.com', '12345678'),
-(3, 'بهروز', 'pcmojtaba19@gmail.com', '123'),
-(4, 'ali', 'pcmojtaba19@gmail.com', '12'),
-(5, 'sadra', 'pcmojtaba19@gmail.com', 'sad');
+INSERT INTO `signup` (`ID`, `User Name`, `Email`, `Password`, `admin`) VALUES
+(1, 'Mojtaba', 'pcmojtaba19@gmail.com', '1234', 1),
+(2, 'Ahmad', 'pcmojtaba19@gmail.com', '12345678', 0),
+(3, 'بهروز', 'pcmojtaba19@gmail.com', '123', 0),
+(4, 'ali', 'pcmojtaba19@gmail.com', '12', 1),
+(5, 'sadra', 'pcmojtaba19@gmail.com', 'sad', 0);
 
 --
 -- Indexes for dumped tables
@@ -127,7 +128,7 @@ ALTER TABLE `city`
 -- AUTO_INCREMENT for table `news`
 --
 ALTER TABLE `news`
-  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `signup`
