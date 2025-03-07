@@ -33,7 +33,11 @@ include("header-index.php");
                 <label class="form-label">متن خبر</label>
                 <input type="text" name="text" class="form-control" placeholder="متن مقاله را وارد کنید">
               </div>
-              <button type="submit" class="btn btn-success w-100">زخیره</button>
+              <div class="mb-3">
+                <label class="form-label">نام فایل در منبع</label>
+                <input type="text" name="textfile" class="form-control" placeholder="نام فایل را وارد کنید">
+              </div>
+              <button type="submit" class="btn btn-success w-100">‌ذخیره</button>
             </form>
           </div>
         </div>

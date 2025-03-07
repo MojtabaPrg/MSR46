@@ -6,13 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css"
     integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb" crossorigin="anonymous">
-  <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
   <style>
     .footer .icon {
       font-size: 1.5rem;
-      margin-right: 10px;
     }
   </style>
 
@@ -82,7 +80,6 @@
 
   <!-- اخبار -->
   <section>
-
     <!-- اخبار بخش اول -->
     <div class="container">
 
@@ -116,46 +113,34 @@
               <p class="card-text"><small class="text-body-secondary">آخرین آپدیت 2 دقیقه پیش</small></p>
             </div>
           </div>
-
         </div>
-
       </div>
-
-      <!-- <div class="card mb-3 mt-5 shadow">
-        <a href="ghalam.html"><img
-            src="https://api2.zoomit.ir/media/mijia-dictionary-pen-c1-6760a8427b13ed549245f7c1?w=1080&q=80"
-            class="card-img-top" style="height: 500px;"></a>
-        <div class="card-body">
-          <h5 class="card-title">قلم شیائومی</h5>
-          <p class="card-text">قلم ۴۸ دلاری شیائومی در کسری از ثانیه، متن را با دقت ۹۸ درصدی، شناسایی و ترجمه می‌کند</p>
-          <p class="card-text"><small class="text-body-secondary">آخرین آپدیت ۳ دقیقه پیش</small></p>
-        </div>
-      </div> -->
-
     </div>
+  </section>
 
     <!-- اخبار بخش دوم -->
-    <div class="container-fluid" style="margin-top: 6rem;">
-
-      <div class="row ms-md-5">
-
-        <div class="row col-9">
-
-          <div class="col-12 col-lg-6">
-
-            <div class="col">
+    <div class="container-fluid mt-4">
+    <div class="row">
+    <?php 
+           $link=mysqli_connect("localhost","root","","sign");
+           $result=mysqli_query($link,"SELECT * FROM `news`");
+           mysqli_close($link);
+           $row=mysqli_fetch_array($result);
+           while($row){
+           ?>
+           <div class="col-6 col-md-4">
               <div class="card mb-3 shadow" style="max-width: 540px;">
                 <div class="row g-0">
                   <div class="col-xxl-4">
-                    <a href="News/AMD.php"><img
-                        src="https://api2.zoomit.ir/media/amd-ryzen-9000-desktop-cpu-665d4ab0772792639debfb9c?w=384&q=75"
+                    <a href="<?php echo($row["files"]);?>"><img
+                        src="<?php echo($row["imageurl"]);?>"
                         class="img-fluid rounded-start w-100 h-100"></a>
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
-                      <h5 class="card-title">پردازنده AMD</h5>
+                      <h5 class="card-title"><?php echo($row["title"]);?></h5>
                       <p class="card-text">
-                        ای‌ام‌دی: «محصولات افتضاح اینتل» عامل نایابی پردازنده Ryzen 9 9800X3D هستند!
+                      <?php echo($row["text"]); ?>
                       </p>
                       <p class="card-text"><small class="text-body-secondary">آخرین آپدیت ۵ دقیقه پیش</small></p>
                     </div>
@@ -163,182 +148,41 @@
                 </div>
               </div>
             </div>
+            <?php
+             $row=mysqli_fetch_array($result);
+             }
+             ?>
+             </div>
+             </div>
+<!-- تبلیغات -->
 
-            <div class="col">
-              <div class="card mb-3 shadow" style="max-width: 540px;">
-                <div class="row g-0">
-                  <div class="col-xxl-4">
-                    <a href="News/waste.php"><img
-                        src="https://api2.zoomit.ir/media/nuclear-waste-facts-sign-scaled-677684f5e264bbf694ff5dbf?w=1080&q=80"
-                        class="img-fluid rounded-start w-100 h-100"></a>
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">ضایعات هسته‌ای</h5>
-                      <p class="card-text">همه چیز درباره ضایعات هسته‌ای: از منشأ تا مدیریت پایدار
-                      </p>
-                      <p class="card-text"><small class="text-body-secondary">آخرین آپدیت ۱ دقیقه پیش</small></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card mb-3 shadow" style="max-width: 540px;">
-                <div class="row g-0">
-                  <div class="col-xxl-4">
-                    <a href="News/Thunderbolt.php"><img
-                        src="https://api2.zoomit.ir/media/pic2pce101932f-6c4a-4460-81de-f3e4e7e2b206webp-67802b986e3d4b6793536844?w=1080&q=80"
-                        class="img-fluid rounded-start w-100 h-100"></a>
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">یوگرین از داک Thunderbolt 5</h5>
-                      <p class="card-text">یوگرین از داک Thunderbolt 5 جدیدش و چند محصول دیگر رونمایی کرد
-                      </p>
-                      <p class="card-text"><small class="text-body-secondary">آخرین آپدیت ۱۹ دقیقه پیش</small></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-lg-6">
-
-            <div class="col">
-              <div class="card mb-3 shadow" style="max-width: 540px;">
-                <div class="row g-0">
-                  <div class="col-xxl-4">
-                    <a href="News/Monitor.php"><img
-                        src="https://api2.zoomit.ir/media/gigabyte-ces-2025-1-67820d588b380d60e9ffda8d?w=1080&q=80"
-                        class="img-fluid rounded-start w-100 h-100"></a>
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">مانیتور های گیگابایت</h5>
-                      <p class="card-text">
-                        گیگابایت در مانیتورهایش از پنل QD-OLED جدید سامسونگ استفاده می‌کند
-                      </p>
-                      <p class="card-text"><small class="text-body-secondary">آخرین آپدیت ۵ دقیقه پیش</small></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card mb-3 shadow" style="max-width: 540px;">
-                <div class="row g-0">
-                  <div class="col-xxl-4">
-                    <a href="News/whatsApp.php"><img
-                        src="https://api2.zoomit.ir/media/whatsapp-logo-673b1c61b42bf336168d25b8?w=1080&q=80"
-                        class="img-fluid rounded-start w-100 h-100"></a>
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">WhatsApp</h5>
-                      <p class="card-text">واتساپ امیدوار است کاربرانش با بات‌های هوش مصنوعی گفت‌وگو کنند
-                      </p>
-                      <p class="card-text"><small class="text-body-secondary">آخرین آپدیت ۱ دقیقه پیش</small></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card mb-3 shadow" style="max-width: 540px;">
-                <div class="row g-0">
-                  <div class="col-xxl-4">
-                    <a href="News/LGandQualcomm.php"><img
-                        src="https://api2.zoomit.ir/media/bmw-vision-neue-klasse-659edec8db28d1d08cc7d389?w=1080&q=80"
-                        class="img-fluid rounded-start w-100 h-100"></a>
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">همکاری ال‌جی و کوالکام</h5>
-                      <p class="card-text">ال‌جی و کوالکام با همکاری یکدیگر خودروها را هوشمندتر می‌کنند
-                      </p>
-                      <p class="card-text"><small class="text-body-secondary">آخرین آپدیت ۱۹ دقیقه پیش</small></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-
-        <!-- تبلیغات -->
-        <div class="col-12 col-md-3">
-
-          <div class="col-xxl-12">
-            <div class="row">
-
-              <div class="col-6 col-md-12 col-xxl-6">
-                <a href="https://www.saadatrent.com/emirates" target="_blank">
-                  <img class="img-fluid mt-md-2" src="./tab/g1.gif" alt="">
-                </a>
-              </div>
-
-              <div class="col-6 col-md-12 col-xxl-6">
-                <a href="https://daric.gold/?utm_source=zoomit_blog&utm_medium=banner&utm_campaign=zoomit10_11_12"
-                  target="_blank">
-                  <img class="img-fluid mt-md-2" src="./tab/g3.gif" alt="">
-                </a>
-              </div>
-
-            </div>
-          </div>
-
-          <div class="col-xxl-12 mt-4">
-            <div class="row">
-
-              <div class="col-6 col-md-12 col-xxl-6">
-                <a href="https://nipoto.com/bitcoin?utm_source=website&utm_medium=npstatic12&utm_campaign=target2&utm_term=banner052&utm_content=first"
-                  target="_blank">
-                  <img class="img-fluid mt-md-2" src="./tab/g2.gif" alt="">
-                </a>
-              </div>
-
-              <div class="col-6 col-md-12 col-xxl-6">
-                <a href="https://prms.ir/zoomitd" target="_blank">
-                  <img class="img-fluid mt-md-2" src="./tab/g5.gif" alt="">
-                </a>
-              </div>
-
-            </div>
-          </div>
-
-          <div class="col-xxl-12 mt-4">
-            <div class="row">
-
-              <div class="col-6 col-md-12 col-xxl-6">
-                <a href="https://proop.co/" target="_blank">
-                  <img class="img-fluid mt-md-2" src="./tab/g6.gif" alt="">
-                </a>
-              </div>
-
-              <div class="col-6 col-md-12 col-xxl-6">
-                <a href="https://www.shatel.ir/internet-services/towers-special-services/?utm_source=zoomit&utm_medium=display&utm_campaign=towers-special-services"
-                  target="_blank">
-                  <img class="img-fluid mt-md-2" src="./tab/g7.gif" alt="">
-                </a>
-              </div>
-
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </div>
-
-  </section>
+<div class="row m-4">
+  <div class="col-5 col-md-2 m-2">
+  <a href="https://www.saadatrent.com/emirates" target="_blank">
+        <img class="img-fluid mt-md-2" src="./tab/g1.gif" alt="">
+      </a>
+  </div>
+  <div class="col-5 col-md-2 m-2">
+  <a href="https://proop.co/" target="_blank">
+        <img class="img-fluid mt-md-2" src="./tab/g6.gif" alt="">
+      </a>
+  </div>
+  <div class="col-5 col-md-2 m-2">
+  <a href="https://daric.gold/?utm_source=zoomit_blog&utm_medium=banner&utm_campaign=zoomit10_11_12" target="_blank">
+        <img class="img-fluid mt-md-2" src="./tab/g3.gif" alt="">
+      </a>
+  </div>
+  <div class="col-5 col-md-2 m-2">
+  <a href="https://www.shatel.ir/internet-services/towers-special-services/?utm_source=zoomit&utm_medium=display&utm_campaign=towers-special-services" target="_blank">
+        <img class="img-fluid mt-md-2" src="./tab/g7.gif" alt="">
+      </a>
+  </div>
+  <div class="col-5 col-md-2 m-2">
+  <a href="https://www.shatel.ir/internet-services/towers-special-services/?utm_source=zoomit&utm_medium=display&utm_campaign=towers-special-services" target="_blank">
+        <img class="img-fluid mt-md-2" src="./tab/g3.gif" alt="">
+      </a>
+  </div>
+</div>
 
   <footer id="foot" class="footer bg-success p-3 mt-4">
     <div class="container">

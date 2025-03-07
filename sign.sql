@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 01, 2025 at 03:36 AM
+-- Generation Time: Mar 07, 2025 at 04:37 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -57,15 +57,21 @@ CREATE TABLE `news` (
   `imageurl` varchar(100) NOT NULL,
   `title` varchar(50) NOT NULL,
   `text` text NOT NULL,
-  `id` int(50) NOT NULL
+  `id` int(50) NOT NULL,
+  `files` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `news`
 --
 
-INSERT INTO `news` (`imageurl`, `title`, `text`, `id`) VALUES
-('images/grok_image_x5j2064.jpg', 'Icon EL', 'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.', 1);
+INSERT INTO `news` (`imageurl`, `title`, `text`, `id`, `files`) VALUES
+('images/amd.webp', 'پردازنده AMD', 'ای‌ام‌دی: «محصولات افتضاح اینتل» عامل نایابی پردازنده Ryzen 9 9800X3D هستند!', 1, 'News/AMD.php'),
+('images/bomb.webp', 'ضایعات هسته‌ای', 'همه چیز درباره ضایعات هسته‌ای: از منشأ تا مدیریت پایدار', 2, 'News/waste.php'),
+('images/ugreen.webp', 'یوگرین از داک Thunderbolt 5', 'یوگرین از داک Thunderbolt 5 جدیدش و چند محصول دیگر رونمایی کرد', 3, 'News/Thunderbolt.php'),
+('images/cump.webp', 'مانیتور های گیگابایت', 'گیگابایت در مانیتورهایش از پنل QD-OLED جدید سامسونگ استفاده می‌کند', 4, 'News/Monitor.php'),
+('images/whatsapp.webp', 'WhatsApp', 'واتساپ امیدوار است کاربرانش با بات‌های هوش مصنوعی گفت‌وگو کنند', 5, 'News/whatsApp.php'),
+('images/bmw.webp', 'همکاری ال‌جی و کوالکام', 'ال‌جی و کوالکام با همکاری یکدیگر خودروها را هوشمندتر می‌کنند', 6, 'News/LGandQualcomm.php');
 
 -- --------------------------------------------------------
 
@@ -128,7 +134,7 @@ ALTER TABLE `city`
 -- AUTO_INCREMENT for table `news`
 --
 ALTER TABLE `news`
-  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `signup`

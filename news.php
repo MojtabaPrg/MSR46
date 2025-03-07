@@ -33,15 +33,18 @@ mysqli_close($link);
 $row=mysqli_fetch_array($result);
 while($row){
 ?>
-<div class="row card m-1">
-    <img class="imgg" src="<?php echo($row["imageurl"]); ?>" alt="">
+<div class="container mb-4">
+    <div class="row card m-1 shadow">
+    <img class="imgg" src="<?php echo($row["imageurl"]);?>" alt="">
     <span class="col-12 m-2 h5"><?php echo($row["title"]);?></span>
     <span class="col-12 m-2"><?php echo($row["text"]); ?></span>
-    <div class="col">
+    <div class="col m-2">
         <a class="btn btn-success" href="news_edit.php?id=<?php echo($row["id"]); ?>">*</a>
         <a class="btn btn-danger" href="news_delete.php?id=<?php echo($row["id"]); ?>">-</a>
     </div>
 </div>
+</div>
+
 <?php
 $row=mysqli_fetch_array($result);
 }
