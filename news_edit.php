@@ -24,7 +24,7 @@ if(isset( $_GET["id"])){
     $row=mysqli_fetch_array($result);
     if($row){
         $title=$row["title"];
-        $text=$row["text"];
+        $text=$row["content"];
         $imageurl=$row["imageurl"];
     }
 }
@@ -49,7 +49,7 @@ if(isset( $_GET["id"])){
               </div>
               <div class="mb-3">
                 <label class="form-label">متن خبر</label>
-                <input class="form-control" type="text" name="text" placeholder="متن مقاله را وارد کنید"" value="<?php echo($text); ?>">
+                <input class="form-control" type="text" name="text" placeholder="متن مقاله را وارد کنید" value="<?php echo($text); ?>">
               </div>
               <input class="col-12 col-md m-2" type="text" name="id" hidden placeholder="id" value="<?php echo($id); ?>">
               <button type="submit" class="btn btn-success w-100">زخیره</button>
