@@ -6,6 +6,15 @@ $image=$_FILES["image"]["name"];
 $title=$_POST["title"];
 $text=$_POST["text"];
 
+$link=mysqli_connect("localhost","root","","sign");
+$result=mysqli_query($link,"SELECT * FROM `news` WHERE `id`=$id");
+$row=mysqli_fetch_array($result);
+if($row){
+    $fileurl=$row["imageurl"];
+}
+unlink($fileurl);
+mysqli_close($link);
+
 $imageurl="images/".$image;
 move_uploaded_file($_FILES["image"]["tmp_name"],$imageurl);
 
